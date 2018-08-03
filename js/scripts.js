@@ -271,10 +271,10 @@ function subarr(number) {
           {
             //console.log("there is a " + arrsum + " at position " + i);
             //loop through the three positions and return the open one
-  /*          for(var j = 0; j < 3; j++)
+            for(var j = 0; j < 3; j++)
               {
                 //the array position with the open spot is = 5
-                if(temp[j] == 5)
+  /*              if(temp[j] == 5)
                   {
                     //save the open position
                     answer = complic[j][i];
