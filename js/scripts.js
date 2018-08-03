@@ -235,24 +235,26 @@ function clear() {
   }
 }
 
-/*function subarr(number) {
+function subarr(number) {
   var answer = "no";
   var arrsum = 0;
   var arrofsum = [];
-  var arr0 = [arr[0][0] , arr[0][1] , arr[0][2]];
-  var arr1 = [arr[1][0] , arr[1][1] , arr[1][2]];
-  var arr2 = [arr[2][0] , arr[2][1] , arr[2][2]];
-  var arr3 = [arr[0][0] , arr[1][0] , arr[2][0]];
-  var arr4 = [arr[0][1] , arr[1][1] , arr[2][1]];
-  var arr5 = [arr[0][2] , arr[1][2] , arr[2][2]];
-  var arr6 = [arr[0][0] , arr[1][1] , arr[2][2]];
-  var arr7 = [arr[0][2] , arr[1][1] , arr[2][0]];
-  var aggregate =[arr0 ,arr1 ,arr2 ,arr3 ,arr4 ,arr5 ,arr6 , arr7];
-  var complic = [["00", "10", "20", "00", "01", "02", "00", "02" ],
-                 ["01", "11", "21", "10", "11", "12", "11", "11"],
-                 ["02", "12", "22", "20", "21", "22", "22", "20"]];
+  var arr0 = [arr[0][0], arr[0][1], arr[0][2]];
+  var arr1 = [arr[1][0], arr[1][1], arr[1][2]];
+  var arr2 = [arr[2][0], arr[2][1], arr[2][2]];
+  var arr3 = [arr[0][0], arr[1][0], arr[2][0]];
+  var arr4 = [arr[0][1], arr[1][1], arr[2][1]];
+  var arr5 = [arr[0][2], arr[1][2], arr[2][2]];
+  var arr6 = [arr[0][0], arr[1][1], arr[2][2]];
+  var arr7 = [arr[0][2], arr[1][1], arr[2][0]];
+  var aggregate = [arr0, arr1, arr2, arr3, arr4, arr5, arr6, arr7];
+  var complic = [
+    ["00", "10", "20", "00", "01", "02", "00", "02"],
+    ["01", "11", "21", "10", "11", "12", "11", "11"],
+    ["02", "12", "22", "20", "21", "22", "22", "20"]
+  ];
 
-  if(arr[1][1] === 5)
+  /*if(arr[1][1] === 5)
     {
       answer = "11";
     }
