@@ -217,11 +217,11 @@ function fill() {
   }
 }
 
-/*function clear() {
+function clear() {
   arr = [
-    [5,5,5],
-    [5,5,5],
-    [5,5,5]
+    [5, 5, 5],
+    [5, 5, 5],
+    [5, 5, 5]
   ];
   count = 0;
   $(".board").html("");
@@ -235,7 +235,7 @@ function fill() {
   }
 }
 
-function subarr(number) {
+/*function subarr(number) {
   var answer = "no";
   var arrsum = 0;
   var arrofsum = [];
