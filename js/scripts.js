@@ -384,13 +384,13 @@ function check() {
     won2 = "11";
     won3 = "22";
   }
-  /*  if (arr[0][2] === false & arr[1][1] === false & arr[2][0] === false) {
-      message = "O WINS!";
-      won1 = "02";
-      won2 = "11";
-      won3 = "20";
-    }
-    if (won1 !== "") {
+  if (arr[0][2] === false & arr[1][1] === false & arr[2][0] === false) {
+    message = "O WINS!";
+    won1 = "02";
+    won2 = "11";
+    won3 = "20";
+  }
+  /*if (won1 !== "") {
       $("#message").html("Player " +  message);
       $(".again").html("Play Again");
       $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
