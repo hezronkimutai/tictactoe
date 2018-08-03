@@ -181,11 +181,11 @@ function turn() {
     $("#message").html("X's turn");
   }
   //show active player
-  /*$("#x").toggleClass("chosen");
+  $("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
   }
 
-  function toggleWon(numb) {
+  /*function toggleWon(numb) {
     $("#" + won1 + "").toggleClass("won");
     $("#" + won2 + "").toggleClass("won");
     $("#" + won3 + "").toggleClass("won");
