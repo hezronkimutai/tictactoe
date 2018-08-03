@@ -195,7 +195,7 @@ function toggleWon(numb) {
   }
 }
 
-/*$(".again").click(function() {
+$(".again").click(function() {
   clear();
   $(".again").css("background-color", "#333");
   $(".again").html("Reset");
@@ -206,7 +206,7 @@ function toggleWon(numb) {
   }
 });
 
-function fill() {
+/* function fill() {
   for (var i = 0; i < 3; i++) {
     for (var j = 0; j < 3; j++) {
       var str = $("#" + i + j).html();
