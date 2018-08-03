@@ -128,13 +128,13 @@ function computer() {
       else
         {
           //randomize a number from open spots
-          /*num = random.length;
+          num = random.length;
           num = Math.floor(Math.random() * num);
           randomize = random[num];
         }
 
       //cumputer play after 1 sec
-      setTimeout(function() {
+      /*setTimeout(function() {
         $(randomize).toggleClass("current");
         game();
         $(randomize).toggleClass("current");
