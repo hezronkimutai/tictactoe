@@ -259,16 +259,15 @@ function subarr(number) {
   }
 
   //loop through all 8 possible winning combinations
-  /*  for (var i = 0; i < aggregate.length; i++)
-      {
-        var temp = aggregate[i];
-        arrsum = temp[0] + temp[1] + temp[2];
+  for (var i = 0; i < aggregate.length; i++) {
+    var temp = aggregate[i];
+    arrsum = temp[0] + temp[1] + temp[2];
 
-        //if the sum adds up to 5 or 7
-        // the row has one open space with two XX or two OO
-        // 0 + 0 + 5 = 5
-        // 1 + 1 + 5 = 7
-        if(arrsum == 5 || arrsum == 7)
+    //if the sum adds up to 5 or 7
+    // the row has one open space with two XX or two OO
+    // 0 + 0 + 5 = 5
+    // 1 + 1 + 5 = 7
+    /*if(arrsum == 5 || arrsum == 7)
           {
             //console.log("there is a " + arrsum + " at position " + i);
             //loop through the three positions and return the open one
