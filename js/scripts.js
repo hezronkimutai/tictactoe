@@ -52,7 +52,7 @@ $("#x").click(function() {
   choose();
 });
 $("#o").click(function() {
-  /*if ($("#o").hasClass("chosen")) {
+  if ($("#o").hasClass("chosen")) {
     $("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
   } else if (!$("#x").hasClass("chosen") && !$("#o").hasClass("chosen")) {
@@ -62,7 +62,7 @@ $("#o").click(function() {
   choose();
 });
 
-function choose() {
+/*function choose() {
   if (first === 0) {
     clearInterval(blink);
     $("#choose").css("color" , "#FFF");
