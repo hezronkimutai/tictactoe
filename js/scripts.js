@@ -1,5 +1,5 @@
 var started = false;
-/*var message = "Select a symbol (X or O)";
+var message = "Select a symbol (X or O)";
 var x, number1, number2, blink;
 var happy = 1000, mod;
 var first = 0;
@@ -9,7 +9,7 @@ var won2, won3, currId;
 var arr = [];
 
 //player = true means player = X
-var player;
+/*var player;
 
 $(document).ready(function() {
 
