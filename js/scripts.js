@@ -160,14 +160,14 @@ function play() {
     arr[number1][number2] = true;
 
   } else {
-    /*$(".current").html("<i class='fa fa-5x fa-circle-o' aria-hidden='true'></i>");
-      arr[number1][number2] = false;
-    }
+    $(".current").html("<i class='fa fa-5x fa-circle-o' aria-hidden='true'></i>");
+    arr[number1][number2] = false;
+  }
 
-    var audio = new Audio('http://natrivera.com/tic-tac-toe/button-3.mp3');
-    audio.play();
-    //cannot change playerSymbol after starting
-    started = true;
+  var audio = new Audio('http://natrivera.com/tic-tac-toe/button-3.mp3');
+  audio.play();
+  //cannot change playerSymbol after starting
+  /*started = true;
     turn();
   }
 
