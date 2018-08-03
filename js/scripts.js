@@ -98,17 +98,14 @@ function computer() {
 
   //if computer symbol is X, number looking for is 5
   //if computer symbol is O, number looking for is 7
-/*  if (player)
-    {
-      fiveseven = 7;
-    }
-  else
-    {
-      fiveseven = 5;
-    }
+  if (player) {
+    fiveseven = 7;
+  } else {
+    fiveseven = 5;
+  }
 
   //fill an array with empty spots
-  for (var i = 0; i < 3; i++) {
+  /*for (var i = 0; i < 3; i++) {
     for (var j = 0; j < 3; j++) {
       var str = $("#" + i + j).html();
       if (str === "") {
