@@ -139,13 +139,13 @@ function computer() {
 
 }
 
-/*function game() {
+function game() {
   play();
   check();
- //console.log(arr);
+  //console.log(arr);
 }
 
-function play() {
+/*function play() {
 
   count++;
 
