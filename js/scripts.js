@@ -19,24 +19,24 @@ $(document).ready(function() {
 
       var j = 0;
       setInterval(function() {
-            var s = message.charAt(j);
-            $("#message").append(s);
+        var s = message.charAt(j);
+        $("#message").append(s);
 
-            if (j < message.length) {
-      j++;
-    }
+        if (j < message.length) {
+          j++;
+        }
 
-  }, 100);
+      }, 100);
 
-  /*blink = setInterval(function() {
-    mod = happy % 2;
-    if(mod === 1) {
-      $("#choose").css("color" , "#fff");
-    } else {
-      $("#choose").css("color" , "yellow");
-    }
+      blink = setInterval(function() {
+            mod = happy % 2;
+            if (mod === 1) {
+              $("#choose").css("color", "#fff");
+            } else {
+              $("#choose").css("color", "yellow");
+            }
 
-    happy--;
+            /*happy--;
   }, 1000);
 
 });
