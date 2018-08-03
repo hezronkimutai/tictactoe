@@ -206,7 +206,7 @@ $(".again").click(function() {
   }
 });
 
-/* function fill() {
+function fill() {
   for (var i = 0; i < 3; i++) {
     for (var j = 0; j < 3; j++) {
       var str = $("#" + i + j).html();
@@ -217,7 +217,7 @@ $(".again").click(function() {
   }
 }
 
-function clear() {
+/*function clear() {
   arr = [
     [5,5,5],
     [5,5,5],
