@@ -279,7 +279,7 @@ function subarr(number) {
                     //save the open position
                     answer = complic[j][i];
                     //check if the open position is a winning play and add to array
-  /*                  if(arrsum == number)
+                    if(arrsum == number)
                       {
                         arrofsum.push(answer);
                         //console.log(arrofsum);
@@ -287,7 +287,7 @@ function subarr(number) {
                   }
               }
             //gonna check here if there is a winning play
-            if(arrofsum.length > 0)
+  /*          if(arrofsum.length > 0)
               {
                 answer = arrofsum[0];
               }
