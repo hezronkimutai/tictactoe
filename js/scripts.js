@@ -1,5 +1,5 @@
-/*var started = false;
-var message = "Select a symbol (X or O)";
+var started = false;
+/*var message = "Select a symbol (X or O)";
 var x, number1, number2, blink;
 var happy = 1000, mod;
 var first = 0;
