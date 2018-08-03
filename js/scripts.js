@@ -287,7 +287,7 @@ function subarr(number) {
                   }
               }
             //gonna check here if there is a winning play
-  /*          if(arrofsum.length > 0)
+            if(arrofsum.length > 0)
               {
                 answer = arrofsum[0];
               }
@@ -296,7 +296,7 @@ function subarr(number) {
     return answer;
   }
 
-  function check() {
+  /*function check() {
 
     if (arr[0][0] === true & arr[0][1] === true & arr[0][2] === true) {
       message = "X WINS!";
