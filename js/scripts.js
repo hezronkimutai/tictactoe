@@ -11,9 +11,9 @@ var arr = [];
 //player = true means player = X
 var player;
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 
-  fill();
+  /*fill();
   $("#message").css("color", "yellow");
 
   var j = 0;
