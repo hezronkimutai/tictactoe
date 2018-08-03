@@ -17,12 +17,12 @@ $(document).ready(function() {
       fill();
       $("#message").css("color", "yellow");
 
-      /*var j = 0;
-  setInterval(function() {
-    var s = message.charAt(j);
-    $("#message").append(s);
+      var j = 0;
+      setInterval(function() {
+            var s = message.charAt(j);
+            $("#message").append(s);
 
-    if (j < message.length) {
+            /*if (j < message.length) {
       j++;
     }
 
