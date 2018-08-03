@@ -390,15 +390,15 @@ function check() {
     won2 = "11";
     won3 = "20";
   }
-  /*if (won1 !== "") {
-      $("#message").html("Player " +  message);
-      $(".again").html("Play Again");
-      $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
-      toggleWon(1);
-      fill();
-    }
+  if (won1 !== "") {
+    $("#message").html("Player " + message);
+    $(".again").html("Play Again");
+    $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
+    toggleWon(1);
+    fill();
+  }
 
-    if (count === 9) {
+  /*  if (count === 9) {
       if (won1 === "") {
         $("#message").html("Tie Game!");
         $(".again").html("Play Again");
