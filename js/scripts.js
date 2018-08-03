@@ -62,7 +62,7 @@ $("#o").click(function() {
   choose();
 });
 
-/*function choose() {
+function choose() {
   if (first === 0) {
     clearInterval(blink);
     $("#choose").css("color" , "#FFF");
@@ -77,7 +77,7 @@ $("#o").click(function() {
 }
 
 //when the board is clicked
-$(".board").click(function() {
+/*$(".board").click(function() {
 
   $("#message").css("color", "#fff");
   //check if box is empty
