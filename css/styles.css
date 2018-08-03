@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Homemade+Apple');
 body {
-  background-color: #d3d3d3;
+  background-color: #5A3C36;
   color: #fff;
   text-align: center;
   font-family: 'Covered By Your Grace', cursive;
-  background-image: url("../assets/tictactoe.jpeg");
+  /*background-image: url("../assets/tictactoe.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #outside {
