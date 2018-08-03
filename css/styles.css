@@ -58,12 +58,12 @@ body {
   font-family: 'Covered By Your Grace', cursive;
 }
 
-/*#again button:hover {
+#again button:hover {
   background-color: #000;
   color: #fff;
 }
 
-.won {
+/*.won {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
