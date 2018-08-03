@@ -267,45 +267,40 @@ function subarr(number) {
     // the row has one open space with two XX or two OO
     // 0 + 0 + 5 = 5
     // 1 + 1 + 5 = 7
-    if(arrsum == 5 || arrsum == 7)
-          {
-            //console.log("there is a " + arrsum + " at position " + i);
-            //loop through the three positions and return the open one
-            for(var j = 0; j < 3; j++)
-              {
-                //the array position with the open spot is = 5
-                if(temp[j] == 5)
-                  {
-                    //save the open position
-                    answer = complic[j][i];
-                    //check if the open position is a winning play and add to array
-                    if(arrsum == number)
-                      {
-                        arrofsum.push(answer);
-                        //console.log(arrofsum);
-                      }
-                  }
-              }
-            //gonna check here if there is a winning play
-            if(arrofsum.length > 0)
-              {
-                answer = arrofsum[0];
-              }
+    if (arrsum == 5 || arrsum == 7) {
+      //console.log("there is a " + arrsum + " at position " + i);
+      //loop through the three positions and return the open one
+      for (var j = 0; j < 3; j++) {
+        //the array position with the open spot is = 5
+        if (temp[j] == 5) {
+          //save the open position
+          answer = complic[j][i];
+          //check if the open position is a winning play and add to array
+          if (arrsum == number) {
+            arrofsum.push(answer);
+            //console.log(arrofsum);
           }
+        }
       }
-    return answer;
-  }
-
-  /*function check() {
-
-    if (arr[0][0] === true & arr[0][1] === true & arr[0][2] === true) {
-      message = "X WINS!";
-      won1 = "00";
-      won2 = "01";
-      won3 = "02";
-
+      //gonna check here if there is a winning play
+      if (arrofsum.length > 0) {
+        answer = arrofsum[0];
+      }
     }
-    if (arr[1][0] === true & arr[1][1] === true & arr[1][2] === true) {
+  }
+  return answer;
+}
+
+function check() {
+
+  if (arr[0][0] === true & arr[0][1] === true & arr[0][2] === true) {
+    message = "X WINS!";
+    won1 = "00";
+    won2 = "01";
+    won3 = "02";
+
+  }
+  /*  if (arr[1][0] === true & arr[1][1] === true & arr[1][2] === true) {
       message = "X WINS!";
       won1 = "10";
       won2 = "11";
