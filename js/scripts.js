@@ -155,12 +155,12 @@ function play() {
   number2 = (currId).slice(1, 2);
 
   //mark the board load the array x = true  o = false
-  /*  if (player === true) {
-      $(".current").html("<i class='fa fa-5x fa-times' aria-hidden='true'></i>");
-      arr[number1][number2] = true;
+  if (player === true) {
+    $(".current").html("<i class='fa fa-5x fa-times' aria-hidden='true'></i>");
+    arr[number1][number2] = true;
 
-    } else {
-      $(".current").html("<i class='fa fa-5x fa-circle-o' aria-hidden='true'></i>");
+  } else {
+    /*$(".current").html("<i class='fa fa-5x fa-circle-o' aria-hidden='true'></i>");
       arr[number1][number2] = false;
     }
 
