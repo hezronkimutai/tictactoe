@@ -274,12 +274,12 @@ function subarr(number) {
             for(var j = 0; j < 3; j++)
               {
                 //the array position with the open spot is = 5
-  /*              if(temp[j] == 5)
+                if(temp[j] == 5)
                   {
                     //save the open position
                     answer = complic[j][i];
                     //check if the open position is a winning play and add to array
-                    if(arrsum == number)
+  /*                  if(arrsum == number)
                       {
                         arrofsum.push(answer);
                         //console.log(arrofsum);
