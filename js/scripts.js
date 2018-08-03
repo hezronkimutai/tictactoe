@@ -22,13 +22,13 @@ $(document).ready(function() {
             var s = message.charAt(j);
             $("#message").append(s);
 
-            /*if (j < message.length) {
+            if (j < message.length) {
       j++;
     }
 
   }, 100);
 
-  blink = setInterval(function() {
+  /*blink = setInterval(function() {
     mod = happy % 2;
     if(mod === 1) {
       $("#choose").css("color" , "#fff");
