@@ -38,12 +38,12 @@ body {
   width: 110px;
 }
 
-/*.chosen {
+.chosen {
   border: 3px solid #fff;
   border-radius: 5px;
 }
 
-#choose {
+/*#choose {
   margin: 3% 0% 3% 0%;
 }
 
