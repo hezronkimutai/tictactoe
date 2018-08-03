@@ -116,34 +116,30 @@ function computer() {
   var audio = new Audio('http://natrivera.com/tic-tac-toe/button-09.mp3');
   audio.play();
 
-  if(random.length > 0)
-    {
-      var checking = subarr(fiveseven);
-      var randomize = "";
-      //console.log("the answer is " + checking);
-      if(checking !== "no")
-        {
-          randomize = "#" + checking;
-        }
-      else
-        {
-          //randomize a number from open spots
-          num = random.length;
-          num = Math.floor(Math.random() * num);
-          randomize = random[num];
-        }
-
-      //cumputer play after 1 sec
-      /*setTimeout(function() {
-        $(randomize).toggleClass("current");
-        game();
-        $(randomize).toggleClass("current");
-      }, 800);
+  if (random.length > 0) {
+    var checking = subarr(fiveseven);
+    var randomize = "";
+    //console.log("the answer is " + checking);
+    if (checking !== "no") {
+      randomize = "#" + checking;
+    } else {
+      //randomize a number from open spots
+      num = random.length;
+      num = Math.floor(Math.random() * num);
+      randomize = random[num];
     }
+
+    //cumputer play after 1 sec
+    setTimeout(function() {
+      $(randomize).toggleClass("current");
+      game();
+      $(randomize).toggleClass("current");
+    }, 800);
+  }
 
 }
 
-function game() {
+/*function game() {
   play();
   check();
  //console.log(arr);
