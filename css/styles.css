@@ -27,13 +27,13 @@ body {
   font-size: 2em;
 }
 
-/*#game {
+#game {
   margin-left: 1%;
   text-align: center;
   width: 300px;
 }
 
-.board {
+/*.board {
   height: 100px;
   width: 110px;
 }
