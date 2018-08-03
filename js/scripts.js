@@ -398,16 +398,15 @@ function check() {
     fill();
   }
 
-  /*  if (count === 9) {
-      if (won1 === "") {
-        $("#message").html("Tie Game!");
-        $(".again").html("Play Again");
-        $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
-        var audio = new Audio('http://natrivera.com/tic-tac-toe/Error.mp3');
-        audio.play();
-        audio.play();
-      }
-
+  if (count === 9) {
+    if (won1 === "") {
+      $("#message").html("Tie Game!");
+      $(".again").html("Play Again");
+      $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
+      var audio = new Audio('http://natrivera.com/tic-tac-toe/Error.mp3');
+      audio.play();
+      audio.play();
     }
+
   }
-  */
+}
