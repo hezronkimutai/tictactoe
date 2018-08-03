@@ -14,34 +14,34 @@ var player;
 
 $(document).ready(function() {
 
-      fill();
-      $("#message").css("color", "yellow");
+  fill();
+  $("#message").css("color", "yellow");
 
-      var j = 0;
-      setInterval(function() {
-        var s = message.charAt(j);
-        $("#message").append(s);
+  var j = 0;
+  setInterval(function() {
+    var s = message.charAt(j);
+    $("#message").append(s);
 
-        if (j < message.length) {
-          j++;
-        }
+    if (j < message.length) {
+      j++;
+    }
 
-      }, 100);
+  }, 100);
 
-      blink = setInterval(function() {
-            mod = happy % 2;
-            if (mod === 1) {
-              $("#choose").css("color", "#fff");
-            } else {
-              $("#choose").css("color", "yellow");
-            }
+  blink = setInterval(function() {
+    mod = happy % 2;
+    if (mod === 1) {
+      $("#choose").css("color", "#fff");
+    } else {
+      $("#choose").css("color", "yellow");
+    }
 
-            /*happy--;
+    happy--;
   }, 1000);
 
 });
 
-$("#x").click(function() {
+/*$("#x").click(function() {
   if ($("#x").hasClass("chosen")) {
     $("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
