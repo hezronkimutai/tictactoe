@@ -105,7 +105,7 @@ function computer() {
   }
 
   //fill an array with empty spots
-  /*for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 3; i++) {
     for (var j = 0; j < 3; j++) {
       var str = $("#" + i + j).html();
       if (str === "") {
@@ -113,7 +113,7 @@ function computer() {
       }
     }
   }
-  var audio = new Audio('http://natrivera.com/tic-tac-toe/button-09.mp3');
+  /*var audio = new Audio('http://natrivera.com/tic-tac-toe/button-09.mp3');
   audio.play();
 
   if(random.length > 0)
