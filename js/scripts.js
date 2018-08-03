@@ -173,15 +173,15 @@ function play() {
 
 function turn() {
   //switch player
-  /*if (player === true) {
-      player = false;
-      $("#message").html("O's turn");
-    } else {
-      player = true;
-      $("#message").html("X's turn");
-    }
-     //show active player
-    $("#x").toggleClass("chosen");
+  if (player === true) {
+    player = false;
+    $("#message").html("O's turn");
+  } else {
+    player = true;
+    $("#message").html("X's turn");
+  }
+  //show active player
+  /*$("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
   }
 
