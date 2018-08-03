@@ -65,7 +65,7 @@ $("#o").click(function() {
 function choose() {
   if (first === 0) {
     clearInterval(blink);
-    $("#choose").css("color" , "#FFF");
+    $("#choose").css("color", "#FFF");
     clear();
     first = 1;
   }
@@ -77,7 +77,7 @@ function choose() {
 }
 
 //when the board is clicked
-/*$(".board").click(function() {
+$(".board").click(function() {
 
   $("#message").css("color", "#fff");
   //check if box is empty
@@ -90,7 +90,7 @@ function choose() {
   }
 });
 
-function computer() {
+/*function computer() {
   //console.log(arr);
   var num;
   var random = [];
