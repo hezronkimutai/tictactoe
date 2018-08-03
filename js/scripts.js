@@ -348,19 +348,19 @@ function check() {
     won2 = "01";
     won3 = "02";
   }
-  /*  if (arr[1][0] === false & arr[1][1] === false & arr[1][2] === false) {
-      message = "O WINS!";
-      won1 = "10";
-      won2 = "11";
-      won3 = "12";
-    }
-    if (arr[2][0] === false & arr[2][1] === false & arr[2][2] === false) {
-      message = "O WINS!";
-      won1 = "20";
-      won2 = "21";
-      won3 = "22";
-    }
-    if (arr[0][0] === false & arr[1][0] === false & arr[2][0] === false) {
+  if (arr[1][0] === false & arr[1][1] === false & arr[1][2] === false) {
+    message = "O WINS!";
+    won1 = "10";
+    won2 = "11";
+    won3 = "12";
+  }
+  if (arr[2][0] === false & arr[2][1] === false & arr[2][2] === false) {
+    message = "O WINS!";
+    won1 = "20";
+    won2 = "21";
+    won3 = "22";
+  }
+  /*  if (arr[0][0] === false & arr[1][0] === false & arr[2][0] === false) {
       message = "O WINS!";
       won1 = "00";
       won2 = "10";
