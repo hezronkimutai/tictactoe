@@ -336,13 +336,13 @@ function check() {
     won2 = "11";
     won3 = "22";
   }
-  /*  if (arr[0][2] === true & arr[1][1] === true & arr[2][0] === true) {
-      message = "X WINS!";
-      won1 = "02";
-      won2 = "11";
-      won3 = "20";
-    }
-    if (arr[0][0] === false & arr[0][1] === false & arr[0][2] === false) {
+  if (arr[0][2] === true & arr[1][1] === true & arr[2][0] === true) {
+    message = "X WINS!";
+    won1 = "02";
+    won2 = "11";
+    won3 = "20";
+  }
+  /*  if (arr[0][0] === false & arr[0][1] === false & arr[0][2] === false) {
       message = "O WINS!";
       won1 = "00";
       won2 = "01";
