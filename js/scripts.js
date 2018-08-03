@@ -1,7 +1,8 @@
 var started = false;
 var message = "Select a symbol (X or O)";
 var x, number1, number2, blink;
-var happy = 1000, mod;
+var happy = 1000,
+  mod;
 var first = 0;
 var count = 0;
 var won1 = "";
@@ -13,10 +14,10 @@ var player;
 
 $(document).ready(function() {
 
-  /*fill();
-  $("#message").css("color", "yellow");
+      fill();
+      $("#message").css("color", "yellow");
 
-  var j = 0;
+      /*var j = 0;
   setInterval(function() {
     var s = message.charAt(j);
     $("#message").append(s);
