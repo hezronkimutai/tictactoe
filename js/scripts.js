@@ -145,12 +145,12 @@ function game() {
   //console.log(arr);
 }
 
-/*function play() {
+function play() {
 
   count++;
 
   //get the array position from id
-  currId = $(".current").attr("id");
+/*  currId = $(".current").attr("id");
   number1 = (currId).slice(0, 1);
   number2 = (currId).slice(1, 2);
 
