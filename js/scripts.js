@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 });
 
-/*$("#x").click(function() {
+$("#x").click(function() {
   if ($("#x").hasClass("chosen")) {
     $("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
@@ -52,7 +52,7 @@ $(document).ready(function() {
   choose();
 });
 $("#o").click(function() {
-  if ($("#o").hasClass("chosen")) {
+  /*if ($("#o").hasClass("chosen")) {
     $("#x").toggleClass("chosen");
     $("#o").toggleClass("chosen");
   } else if (!$("#x").hasClass("chosen") && !$("#o").hasClass("chosen")) {
