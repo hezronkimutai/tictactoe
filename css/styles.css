@@ -48,7 +48,7 @@ body {
   color: red;
 }
 
-/*#again button {
+#again button {
   margin-bottom: 1%;
   border-radius: 5px;
   background-color: #333;
@@ -58,7 +58,7 @@ body {
   font-family: 'Covered By Your Grace', cursive;
 }
 
-#again button:hover {
+/*#again button:hover {
   background-color: #000;
   color: #fff;
 }
