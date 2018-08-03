@@ -167,13 +167,13 @@ function play() {
   var audio = new Audio('http://natrivera.com/tic-tac-toe/button-3.mp3');
   audio.play();
   //cannot change playerSymbol after starting
-  /*started = true;
-    turn();
-  }
+  started = true;
+  turn();
+}
 
-  function turn() {
-    //switch player
-    if (player === true) {
+function turn() {
+  //switch player
+  /*if (player === true) {
       player = false;
       $("#message").html("O's turn");
     } else {
