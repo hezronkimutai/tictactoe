@@ -63,23 +63,23 @@ body {
   color: #fff;
 }
 
-/*.won {
-  background-color: rgba(255, 255, 255, 0.5);
+.won {
+  background-color: blue;
 }
 
 .top {
   border-top: solid 3px #fff;
 }
 
-.right {
+/*.right {
   border-right: solid 3px #fff;
 }
 
-.bottom {
+/*.bottom {
   border-bottom: solid 3px #fff;
 }
 
-.left {
+/*.left {
   border-left: solid 3px #fff;
 }
 */
