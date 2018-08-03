@@ -90,7 +90,7 @@ $(".board").click(function() {
   }
 });
 
-/*function computer() {
+function computer() {
   //console.log(arr);
   var num;
   var random = [];
@@ -98,7 +98,7 @@ $(".board").click(function() {
 
   //if computer symbol is X, number looking for is 5
   //if computer symbol is O, number looking for is 7
-  if (player)
+/*  if (player)
     {
       fiveseven = 7;
     }
