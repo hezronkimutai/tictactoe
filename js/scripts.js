@@ -254,167 +254,166 @@ function subarr(number) {
     ["02", "12", "22", "20", "21", "22", "22", "20"]
   ];
 
-  /*if(arr[1][1] === 5)
-    {
-      answer = "11";
-    }
+  if (arr[1][1] === 5) {
+    answer = "11";
+  }
 
   //loop through all 8 possible winning combinations
-  for (var i = 0; i < aggregate.length; i++)
-    {
-      var temp = aggregate[i];
-      arrsum = temp[0] + temp[1] + temp[2];
+  /*  for (var i = 0; i < aggregate.length; i++)
+      {
+        var temp = aggregate[i];
+        arrsum = temp[0] + temp[1] + temp[2];
 
-      //if the sum adds up to 5 or 7
-      // the row has one open space with two XX or two OO
-      // 0 + 0 + 5 = 5
-      // 1 + 1 + 5 = 7
-      if(arrsum == 5 || arrsum == 7)
-        {
-          //console.log("there is a " + arrsum + " at position " + i);
-          //loop through the three positions and return the open one
-          for(var j = 0; j < 3; j++)
-            {
-              //the array position with the open spot is = 5
-              if(temp[j] == 5)
-                {
-                  //save the open position
-                  answer = complic[j][i];
-                  //check if the open position is a winning play and add to array
-                  if(arrsum == number)
-                    {
-                      arrofsum.push(answer);
-                      //console.log(arrofsum);
-                    }
-                }
-            }
-          //gonna check here if there is a winning play
-          if(arrofsum.length > 0)
-            {
-              answer = arrofsum[0];
-            }
-        }
+        //if the sum adds up to 5 or 7
+        // the row has one open space with two XX or two OO
+        // 0 + 0 + 5 = 5
+        // 1 + 1 + 5 = 7
+        if(arrsum == 5 || arrsum == 7)
+          {
+            //console.log("there is a " + arrsum + " at position " + i);
+            //loop through the three positions and return the open one
+            for(var j = 0; j < 3; j++)
+              {
+                //the array position with the open spot is = 5
+                if(temp[j] == 5)
+                  {
+                    //save the open position
+                    answer = complic[j][i];
+                    //check if the open position is a winning play and add to array
+                    if(arrsum == number)
+                      {
+                        arrofsum.push(answer);
+                        //console.log(arrofsum);
+                      }
+                  }
+              }
+            //gonna check here if there is a winning play
+            if(arrofsum.length > 0)
+              {
+                answer = arrofsum[0];
+              }
+          }
+      }
+    return answer;
+  }
+
+  function check() {
+
+    if (arr[0][0] === true & arr[0][1] === true & arr[0][2] === true) {
+      message = "X WINS!";
+      won1 = "00";
+      won2 = "01";
+      won3 = "02";
+
     }
-  return answer;
-}
-
-function check() {
-
-  if (arr[0][0] === true & arr[0][1] === true & arr[0][2] === true) {
-    message = "X WINS!";
-    won1 = "00";
-    won2 = "01";
-    won3 = "02";
-
-  }
-  if (arr[1][0] === true & arr[1][1] === true & arr[1][2] === true) {
-    message = "X WINS!";
-    won1 = "10";
-    won2 = "11";
-    won3 = "12";
-  }
-  if (arr[2][0] === true & arr[2][1] === true & arr[2][2] === true) {
-    message = "X WINS!";
-    won1 = "20";
-    won2 = "21";
-    won3 = "22";
-  }
-  if (arr[0][0] === true & arr[1][0] === true & arr[2][0] === true) {
-    message = "X WINS!";
-    won1 = "00";
-    won2 = "10";
-    won3 = "20";
-  }
-  if (arr[0][1] === true & arr[1][1] === true & arr[2][1] === true) {
-    message = "X WINS!";
-    won1 = "01";
-    won2 = "11";
-    won3 = "21";
-  }
-  if (arr[0][2] === true & arr[1][2] === true & arr[2][2] === true) {
-    message = "X WINS!";
-    won1 = "02";
-    won2 = "12";
-    won3 = "22";
-  }
-  if (arr[0][0] === true & arr[1][1] === true & arr[2][2] === true) {
-    message = "X WINS!";
-    won1 = "00";
-    won2 = "11";
-    won3 = "22";
-  }
-  if (arr[0][2] === true & arr[1][1] === true & arr[2][0] === true) {
-    message = "X WINS!";
-    won1 = "02";
-    won2 = "11";
-    won3 = "20";
-  }
-  if (arr[0][0] === false & arr[0][1] === false & arr[0][2] === false) {
-    message = "O WINS!";
-    won1 = "00";
-    won2 = "01";
-    won3 = "02";
-  }
-  if (arr[1][0] === false & arr[1][1] === false & arr[1][2] === false) {
-    message = "O WINS!";
-    won1 = "10";
-    won2 = "11";
-    won3 = "12";
-  }
-  if (arr[2][0] === false & arr[2][1] === false & arr[2][2] === false) {
-    message = "O WINS!";
-    won1 = "20";
-    won2 = "21";
-    won3 = "22";
-  }
-  if (arr[0][0] === false & arr[1][0] === false & arr[2][0] === false) {
-    message = "O WINS!";
-    won1 = "00";
-    won2 = "10";
-    won3 = "20";
-  }
-  if (arr[0][1] === false & arr[1][1] === false & arr[2][1] === false) {
-    message = "O WINS!";
-    won1 = "01";
-    won2 = "11";
-    won3 = "21";
-  }
-  if (arr[0][2] === false & arr[1][2] === false & arr[2][2] === false) {
-    message = "O WINS!";
-    won1 = "02";
-    won2 = "12";
-    won3 = "22";
-  }
-  if (arr[0][0] === false & arr[1][1] === false & arr[2][2] === false) {
-    message = "O WINS!";
-    won1 = "00";
-    won2 = "11";
-    won3 = "22";
-  }
-  if (arr[0][2] === false & arr[1][1] === false & arr[2][0] === false) {
-    message = "O WINS!";
-    won1 = "02";
-    won2 = "11";
-    won3 = "20";
-  }
-  if (won1 !== "") {
-    $("#message").html("Player " +  message);
-    $(".again").html("Play Again");
-    $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
-    toggleWon(1);
-    fill();
-  }
-
-  if (count === 9) {
-    if (won1 === "") {
-      $("#message").html("Tie Game!");
+    if (arr[1][0] === true & arr[1][1] === true & arr[1][2] === true) {
+      message = "X WINS!";
+      won1 = "10";
+      won2 = "11";
+      won3 = "12";
+    }
+    if (arr[2][0] === true & arr[2][1] === true & arr[2][2] === true) {
+      message = "X WINS!";
+      won1 = "20";
+      won2 = "21";
+      won3 = "22";
+    }
+    if (arr[0][0] === true & arr[1][0] === true & arr[2][0] === true) {
+      message = "X WINS!";
+      won1 = "00";
+      won2 = "10";
+      won3 = "20";
+    }
+    if (arr[0][1] === true & arr[1][1] === true & arr[2][1] === true) {
+      message = "X WINS!";
+      won1 = "01";
+      won2 = "11";
+      won3 = "21";
+    }
+    if (arr[0][2] === true & arr[1][2] === true & arr[2][2] === true) {
+      message = "X WINS!";
+      won1 = "02";
+      won2 = "12";
+      won3 = "22";
+    }
+    if (arr[0][0] === true & arr[1][1] === true & arr[2][2] === true) {
+      message = "X WINS!";
+      won1 = "00";
+      won2 = "11";
+      won3 = "22";
+    }
+    if (arr[0][2] === true & arr[1][1] === true & arr[2][0] === true) {
+      message = "X WINS!";
+      won1 = "02";
+      won2 = "11";
+      won3 = "20";
+    }
+    if (arr[0][0] === false & arr[0][1] === false & arr[0][2] === false) {
+      message = "O WINS!";
+      won1 = "00";
+      won2 = "01";
+      won3 = "02";
+    }
+    if (arr[1][0] === false & arr[1][1] === false & arr[1][2] === false) {
+      message = "O WINS!";
+      won1 = "10";
+      won2 = "11";
+      won3 = "12";
+    }
+    if (arr[2][0] === false & arr[2][1] === false & arr[2][2] === false) {
+      message = "O WINS!";
+      won1 = "20";
+      won2 = "21";
+      won3 = "22";
+    }
+    if (arr[0][0] === false & arr[1][0] === false & arr[2][0] === false) {
+      message = "O WINS!";
+      won1 = "00";
+      won2 = "10";
+      won3 = "20";
+    }
+    if (arr[0][1] === false & arr[1][1] === false & arr[2][1] === false) {
+      message = "O WINS!";
+      won1 = "01";
+      won2 = "11";
+      won3 = "21";
+    }
+    if (arr[0][2] === false & arr[1][2] === false & arr[2][2] === false) {
+      message = "O WINS!";
+      won1 = "02";
+      won2 = "12";
+      won3 = "22";
+    }
+    if (arr[0][0] === false & arr[1][1] === false & arr[2][2] === false) {
+      message = "O WINS!";
+      won1 = "00";
+      won2 = "11";
+      won3 = "22";
+    }
+    if (arr[0][2] === false & arr[1][1] === false & arr[2][0] === false) {
+      message = "O WINS!";
+      won1 = "02";
+      won2 = "11";
+      won3 = "20";
+    }
+    if (won1 !== "") {
+      $("#message").html("Player " +  message);
       $(".again").html("Play Again");
       $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
-      var audio = new Audio('http://natrivera.com/tic-tac-toe/Error.mp3');
-      audio.play();
-      audio.play();
+      toggleWon(1);
+      fill();
     }
 
+    if (count === 9) {
+      if (won1 === "") {
+        $("#message").html("Tie Game!");
+        $(".again").html("Play Again");
+        $(".again").css("background-color", "rgba(255, 255, 255, 0.5)");
+        var audio = new Audio('http://natrivera.com/tic-tac-toe/Error.mp3');
+        audio.play();
+        audio.play();
+      }
+
+    }
   }
-}
-*/
+  */
