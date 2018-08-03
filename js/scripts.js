@@ -9,9 +9,9 @@ var won2, won3, currId;
 var arr = [];
 
 //player = true means player = X
-/*var player;
+var player;
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
   fill();
   $("#message").css("color", "yellow");
