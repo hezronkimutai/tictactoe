@@ -113,7 +113,7 @@ function computer() {
       }
     }
   }
-  /*var audio = new Audio('http://natrivera.com/tic-tac-toe/button-09.mp3');
+  var audio = new Audio('http://natrivera.com/tic-tac-toe/button-09.mp3');
   audio.play();
 
   if(random.length > 0)
@@ -121,7 +121,7 @@ function computer() {
       var checking = subarr(fiveseven);
       var randomize = "";
       //console.log("the answer is " + checking);
-      if(checking !== "no")
+      /*if(checking !== "no")
         {
           randomize = "#" + checking;
         }
