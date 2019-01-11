@@ -143,14 +143,14 @@ header {
   height: 100%;
 }
 
-/*#emoji-text {
+#emoji-text {
   flex: 1;
   text-align: center;
   margin: 0 30px;
   font-size: 20px;
 }
 
-#aiTalk {
+/*#aiTalk {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
