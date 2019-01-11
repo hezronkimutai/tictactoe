@@ -267,12 +267,12 @@ nav div div button.charBtn {
   background-color: #1BA485;
 }
 
-/*#menu-open div:hover {
+#menu-open div:hover {
   background-color: #28C09E;
   border: solid #009271;
 }
 
-#score {
+/*#score {
   margin: auto;
 }
 
