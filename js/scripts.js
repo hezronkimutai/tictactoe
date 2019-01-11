@@ -181,16 +181,16 @@ function pickTurn(first) {
 }
 
 // </> Character Chooser
-/*function chrChoose(x) {
- for (var i = 0; i < chars.length; i++) {
-  document.getElementById("char"+i).className = "charBtn";
- }
- document.getElementById("char"+x).className += " active";
- plChar = chars[x];
+function chrChoose(x) {
+  for (var i = 0; i < chars.length; i++) {
+    document.getElementById("char" + i).className = "charBtn";
+  }
+  document.getElementById("char" + x).className += " active";
+  plChar = chars[x];
 }
 
 // </> Character Change
-function chrChange(x) {
+/*function chrChange(x) {
  for (var i = 0; i < chars.length; i++) {
   document.getElementById("char-chng"+i).className = "charBtn";
  }
