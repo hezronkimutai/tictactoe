@@ -420,67 +420,67 @@ function ai() {
           }
         }
       }
-      /*   var bigest = -99;
-       for (var j = 0; j < 9; j++) {
+      var bigest = -99;
+      for (var j = 0; j < 9; j++) {
         if (scoresMain[j] !== '0' && scoresMain[j] > bigest) {
-         bigest = scoresMain[j];
+          bigest = scoresMain[j];
         }
-       }
-       var inx = [], i;
-       for (i = 0; i < 9; i++) {
-        if (scoresMain[i] === bigest) {
-         inx.push(i);     }    }
-       console.log(gameMain.slice(0,3), scoresMain.slice(0,3));
-       console.log(gameMain.slice(3,6), scoresMain.slice(3,6));
-       console.log(gameMain.slice(6,9), scoresMain.slice(6,9));
-       return inx;
       }
+      /*       var inx = [], i;
+             for (i = 0; i < 9; i++) {
+              if (scoresMain[i] === bigest) {
+               inx.push(i);     }    }
+             console.log(gameMain.slice(0,3), scoresMain.slice(0,3));
+             console.log(gameMain.slice(3,6), scoresMain.slice(3,6));
+             console.log(gameMain.slice(6,9), scoresMain.slice(6,9));
+             return inx;
+            }
 
-/*      function plSim(simGame) { // PL SIM
-       var simGameTest = simGame.slice();
-       for (var i = 0; i < 9; i++) {
-        if (isOpen(simGame, i)) {
-         simGameTest = simGame.slice();
-         simGameTest[i] = plChar;
-         if (didWin(simGameTest, plChar)) {
-          return -1;
-         }
-        }
-       }
-       var plScores = ['0','0','0','0','0','0','0','0','0'];
-       for (var j = 0; j < 9; j++) {
-        if (isOpen(simGame, j)) {
-         simGameTest = simGame.slice();
-         simGameTest[j] = plChar;
-         plScores[j] = aiSim(simGameTest);
-        }
-       }
-       return findScore(plScores, -1);
-      }
+      /*      function plSim(simGame) { // PL SIM
+             var simGameTest = simGame.slice();
+             for (var i = 0; i < 9; i++) {
+              if (isOpen(simGame, i)) {
+               simGameTest = simGame.slice();
+               simGameTest[i] = plChar;
+               if (didWin(simGameTest, plChar)) {
+                return -1;
+               }
+              }
+             }
+             var plScores = ['0','0','0','0','0','0','0','0','0'];
+             for (var j = 0; j < 9; j++) {
+              if (isOpen(simGame, j)) {
+               simGameTest = simGame.slice();
+               simGameTest[j] = plChar;
+               plScores[j] = aiSim(simGameTest);
+              }
+             }
+             return findScore(plScores, -1);
+            }
 
-      function aiSim(simGame) { // AI SIM
-       var simGameTest = simGame.slice();
-       for (var i = 0; i < 9; i++) {
-        if (isOpen(simGame, i)) {
-         simGameTest = simGame.slice();
-         simGameTest[i] = aiChar;
-         if (didWin(simGameTest, aiChar)) {
-          return 1;
-         }
-        }
-       }
-       var aiScores = ['0','0','0','0','0','0','0','0','0'];
-       for (var j = 0; j < 9; j++) {
-        if (isOpen(simGame, j)) {
-         simGameTest = simGame.slice();
-         simGameTest[j] = aiChar;
-         aiScores[j] = plSim(simGameTest);
-        }
-       }
-       return findScore(aiScores, 1);
-      } // aiSim()
-     return findBestMove();
-     }
-    } // ai() end
+            function aiSim(simGame) { // AI SIM
+             var simGameTest = simGame.slice();
+             for (var i = 0; i < 9; i++) {
+              if (isOpen(simGame, i)) {
+               simGameTest = simGame.slice();
+               simGameTest[i] = aiChar;
+               if (didWin(simGameTest, aiChar)) {
+                return 1;
+               }
+              }
+             }
+             var aiScores = ['0','0','0','0','0','0','0','0','0'];
+             for (var j = 0; j < 9; j++) {
+              if (isOpen(simGame, j)) {
+               simGameTest = simGame.slice();
+               simGameTest[j] = aiChar;
+               aiScores[j] = plSim(simGameTest);
+              }
+             }
+             return findScore(aiScores, 1);
+            } // aiSim()
+           return findBestMove();
+           }
+          } // ai() end
 
-    charsBtnGen();
+          charsBtnGen();
