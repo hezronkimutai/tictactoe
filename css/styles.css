@@ -25,12 +25,12 @@ body {
   height: 1.5em;
 }
 
-/*a {
- text-decoration: none;
- color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-button:focus {outline:0;}
+/*button:focus {outline:0;}
 
 
 #start-select {
