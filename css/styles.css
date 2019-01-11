@@ -224,13 +224,13 @@ nav div div button:hover {
   transition: background-color 300ms;
 }
 
-/*nav div div button.active {
+nav div div button.active {
   border: 2px solid;
   background-color: #2EB798;
   padding: 13px;
   -webkit-transition: background-color 500ms;
   /* Safari */
-/*transition: background-color 500ms;
+  /*transition: background-color 500ms;
 }
 
 nav div div button.charBtn {
@@ -248,7 +248,7 @@ nav div div button.charBtn {
   opacity: 1;
   -webkit-transition: opacity 500ms;
   /* Safari */
-/*transition: opacity 500ms;
+  /*transition: opacity 500ms;
 }
 
 #side-section {
@@ -402,7 +402,7 @@ tr, th, td {
   height: 100%;
   -webkit-transition: opacity 250ms;
   /* Safari */
-/*transition: opacity 250ms;
+  /*transition: opacity 250ms;
 }
 
 .pos-span span {
@@ -413,7 +413,7 @@ tr, th, td {
   opacity: 0.4;
   -webkit-transition: opacity 550ms;
   /* Safari */
-/*transition: opacity 550ms;
+  /*transition: opacity 550ms;
 }
 
 #grid div div:hover {
@@ -421,7 +421,7 @@ tr, th, td {
   box-shadow: 4px 4px 5px #008B81;
   -webkit-transition: background-color 300ms;
   /* Safari */
-/*transition: background-color 300ms;
+  /*transition: background-color 300ms;
 }
 
 footer p {
