@@ -381,12 +381,12 @@ tr, th, td {
   box-shadow: 2px 2px 4px #008B81;
 }
 
-/*#grid div div.taken {
+#grid div div.taken {
   background-color: #0B3A96;
   box-shadow: 4px 4px 5px #008B81;
 }
 
-#grid div div.win {
+/*#grid div div.win {
   background-color: #E26200;
   box-shadow: 4px 4px 5px #008B81;
 }
