@@ -355,14 +355,14 @@ tr, th, td {
   }
 }
 
-/*#grid {
+#grid {
   height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-#grid div {
+/*#grid div {
   width: 33.3%;
   height: 33.3%;
   padding: 2.5px;
