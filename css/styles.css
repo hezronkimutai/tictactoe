@@ -179,7 +179,7 @@ nav div {
   box-shadow: 3px 3px 6px #0B3A97;
 }
 
-/*nav div div {
+nav div div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -188,7 +188,7 @@ nav div {
   transform: translate(-50%, -50%);
 }
 
-nav div div h3 {
+/*nav div div h3 {
   margin: auto;
   text-align: center;
   width: 100%;
