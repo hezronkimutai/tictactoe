@@ -110,7 +110,7 @@ button:focus {
   transition: background-color 500ms;
 }
 
-/*#start-select div div button.charBtn {
+#start-select div div button.charBtn {
   min-width: 40px;
   height: 40px;
   width: 40px;
@@ -118,7 +118,7 @@ button:focus {
   padding: 6px;
 }
 
-header {
+/*header {
   display: flex;
   height: 110px;
   margin: 0 15px;
