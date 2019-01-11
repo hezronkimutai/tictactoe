@@ -34,17 +34,17 @@ button:focus {
   outline: 0;
 }
 
-/*#start-select {
- position: absolute;
- width: 100vw;
- height: 100vh;
- z-index: 100;
- left: 50%;
- top: 40%;
- transform: translate(-50%,-50%);
+#start-select {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
-#start-select div {
+/*#start-select div {
  position: fixed;
  display: flex;
  left: 50%;
