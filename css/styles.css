@@ -128,13 +128,13 @@ header {
   transition: opacity 750ms;
 }
 
-/*#emoji-outer-div {
+#emoji-outer-div {
   flex: 1;
   display: flex;
   align-items: center;
 }
 
-#emoji {
+/*#emoji {
   width: 100px;
   height: 100px;
 }
