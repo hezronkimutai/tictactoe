@@ -44,20 +44,20 @@ button:focus {
   transform: translate(-50%, -50%);
 }
 
-/*#start-select div {
- position: fixed;
- display: flex;
- left: 50%;
- top: 50%;
- transform: translate(-50%,-50%);
- width: 350px;
- height: 300px;
- border-radius: 35px;
- background-color: #5A8BCE;
- box-shadow: 3px 3px 6px #0B3A97;
+#start-select div {
+  position: fixed;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 300px;
+  border-radius: 35px;
+  background-color: #5A8BCE;
+  box-shadow: 3px 3px 6px #0B3A97;
 }
 
-#start-select div div {
+/*#start-select div div {
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
