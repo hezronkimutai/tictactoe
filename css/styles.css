@@ -347,7 +347,7 @@ tr, th, td {
   margin: 8px auto;
 }
 
-/*@media screen and (min-width: 380px) {
+@media screen and (min-width: 380px) {
   #outer-grid {
     width: 360px;
     height: 360px;
@@ -355,7 +355,7 @@ tr, th, td {
   }
 }
 
-#grid {
+/*#grid {
   height: 100%;
   width: 100%;
   display: flex;
