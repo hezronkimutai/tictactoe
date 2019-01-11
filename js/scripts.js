@@ -158,11 +158,11 @@ var plChar = 'X';
 var aiScore = 0;
 var tieScore = 0;
 
-/*var gameStarted = false;
+var gameStarted = false;
 // --- \/ \/ \/ Before Game Start \/ \/ \/ ---
 
 // </> Player 1st or 2nd
-plFirst = true;
+/*plFirst = true;
 function pickTurn(first) {
  if (first) {
   document.getElementById("1st").className = "active";
