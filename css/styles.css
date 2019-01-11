@@ -150,12 +150,12 @@ header {
   font-size: 20px;
 }
 
-/*#aiTalk {
+#aiTalk {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
 
-nav {
+/*nav {
   display: none;
   position: absolute;
   width: 100vw;
