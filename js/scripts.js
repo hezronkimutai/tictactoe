@@ -190,40 +190,42 @@ function chrChoose(x) {
 }
 
 // </> Character Change
-/*function chrChange(x) {
- for (var i = 0; i < chars.length; i++) {
-  document.getElementById("char-chng"+i).className = "charBtn";
- }
- document.getElementById("char-chng"+x).className += " active";
+function chrChange(x) {
+  for (var i = 0; i < chars.length; i++) {
+    document.getElementById("char-chng" + i).className = "charBtn";
+  }
+  document.getElementById("char-chng" + x).className += " active";
 
   if (aiChar === chars[x]) {
-   var y = -1;
-   while (y === x || y === -1) {y = Math.floor(Math.random()*chars.length);}
-   for (var j = 0; j < 9; j++) {
-    if (gameMain[j] === aiChar) {
-     gameMain[j] = chars[y];
-     document.getElementById("div"+j)
-     .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+chars[y]+".png' style='width: 50px; margin: auto;'></span>";
+    var y = -1;
+    while (y === x || y === -1) {
+      y = Math.floor(Math.random() * chars.length);
     }
-   }
+    for (var j = 0; j < 9; j++) {
+      if (gameMain[j] === aiChar) {
+        gameMain[j] = chars[y];
+        document.getElementById("div" + j)
+          .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon" + chars[y] + ".png' style='width: 50px; margin: auto;'></span>";
+      }
+    }
     aiChar = chars[y];
- }
- // "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+chars[x]+".png' style='width: 50px; margin: auto;'></span>"
- for (var i = 0; i < 9; i++) {
-  if (gameMain[i] === plChar) {
-   gameMain[i] = chars[x];
-   document.getElementById("div"+i)
-    .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+chars[x]+".png' style='width: 50px; margin: auto;'></span>";
-  } else if (gameMain[i] === "0") {
-   document.getElementById("transpChars"+i)
-    .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+chars[x]+".png' style='width: 50px; margin: auto;'></span>";
   }
- }
- plChar = chars[x];
+  // "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+chars[x]+".png' style='width: 50px; margin: auto;'></span>"
+  for (var i = 0; i < 9; i++) {
+    if (gameMain[i] === plChar) {
+      gameMain[i] = chars[x];
+      document.getElementById("div" + i)
+        .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon" + chars[x] + ".png' style='width: 50px; margin: auto;'></span>";
+    } else if (gameMain[i] === "0") {
+      document.getElementById("transpChars" + i)
+        .innerHTML = "<span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon" + chars[x] + ".png' style='width: 50px; margin: auto;'></span>";
+    }
+  }
+  plChar = chars[x];
 }
 
 // </> Random Ai Char
-function randChar() {
+/*function randChar() {
   var rand =  Math.floor(Math.random()*chars.length);
   aiChar = chars[rand];
   if (aiChar === plChar) {return randChar();}
