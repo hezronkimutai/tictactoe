@@ -225,15 +225,17 @@ function chrChange(x) {
 }
 
 // </> Random Ai Char
-/*function randChar() {
-  var rand =  Math.floor(Math.random()*chars.length);
+function randChar() {
+  var rand = Math.floor(Math.random() * chars.length);
   aiChar = chars[rand];
-  if (aiChar === plChar) {return randChar();}
+  if (aiChar === plChar) {
+    return randChar();
+  }
   return;
- }
+}
 
 // </> Start Game
-var round = 0;
+/*var round = 0;
 function startGame() {
  gameStarted = true;
  plMoveDisable = false;
