@@ -472,18 +472,18 @@ function ai() {
           }
         }
       }
-      /*           var aiScores = ['0','0','0','0','0','0','0','0','0'];
-                 for (var j = 0; j < 9; j++) {
-                  if (isOpen(simGame, j)) {
-                   simGameTest = simGame.slice();
-                   simGameTest[j] = aiChar;
-                   aiScores[j] = plSim(simGameTest);
-                  }
-                 }
-                 return findScore(aiScores, 1);
-                } // aiSim()
-               return findBestMove();
-               }
-              } // ai() end
+      var aiScores = ['0', '0', '0', '0', '0', '0', '0', '0', '0'];
+      for (var j = 0; j < 9; j++) {
+        if (isOpen(simGame, j)) {
+          simGameTest = simGame.slice();
+          simGameTest[j] = aiChar;
+          aiScores[j] = plSim(simGameTest);
+        }
+      }
+      /*                 return findScore(aiScores, 1);
+                      } // aiSim()
+                     return findBestMove();
+                     }
+                    } // ai() end
 
-              charsBtnGen();
+                    charsBtnGen();
