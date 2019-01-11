@@ -283,11 +283,11 @@ nav div div button.charBtn {
   display: flex;
 }
 
-/*tr, th, td {
+tr, th, td {
   padding: 1px;
 }
 
-#score div span {
+/*#score div span {
   font-size: 25px;
   margin: 10px auto;
 }
