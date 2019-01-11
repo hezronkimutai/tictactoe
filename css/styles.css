@@ -292,7 +292,7 @@ tr, th, td {
   margin: 10px auto;
 }
 
-/*@media screen and (max-width: 530px) {
+@media screen and (max-width: 530px) {
   body {
     margin: 10px auto;
     padding: 5px;
@@ -341,7 +341,7 @@ tr, th, td {
   }
 }
 
-#outer-grid {
+/*#outer-grid {
   height: 300px;
   width: 300px;
   margin: 8px auto;
