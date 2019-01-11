@@ -155,7 +155,7 @@ header {
   font-weight: bold;
 }
 
-/*nav {
+nav {
   display: none;
   position: absolute;
   width: 100vw;
@@ -166,7 +166,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-nav div {
+/*nav div {
   position: fixed;
   display: flex;
   left: 50%;
