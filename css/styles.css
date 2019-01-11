@@ -251,11 +251,11 @@ nav div div button.charBtn {
   transition: opacity 500ms;
 }
 
-/*#side-section {
+#side-section {
   margin: 15px;
 }
 
-#menu-open div {
+/*#menu-open div {
   margin: auto;
   text-align: center;
   width: 60px;
