@@ -255,7 +255,7 @@ nav div div button.charBtn {
   margin: 15px;
 }
 
-/*#menu-open div {
+#menu-open div {
   margin: auto;
   text-align: center;
   width: 60px;
@@ -267,7 +267,7 @@ nav div div button.charBtn {
   background-color: #1BA485;
 }
 
-#menu-open div:hover {
+/*#menu-open div:hover {
   background-color: #28C09E;
   border: solid #009271;
 }
