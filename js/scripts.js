@@ -235,34 +235,37 @@ function randChar() {
 }
 
 // </> Start Game
-/*var round = 0;
+var round = 0;
+
 function startGame() {
- gameStarted = true;
- plMoveDisable = false;
- document.getElementById('start-select').style.display = 'none';
- document.getElementById('header').style.opacity = '';
- document.getElementById('main-section').style.opacity = '';
- if (round === 0) {
-  document.getElementById("aiTalk").innerHTML = '"Have Fun"';
-  document.getElementById("emoji-img").src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/win3.png";
- }
- round++;
- !function () {
-  var randPl =  Math.floor(Math.random()*chars.length);
-  if (plChar === "X") {plChar = chars[randPl];}
- }();
- randChar();
- var pos = document.getElementsByClassName("pos");
- for (var i = 0; i < 9; i++) {
-  pos[i].innerHTML = '<div><span class="pos-span"><span id="transpChars'+i+'"><span style="display: flex;"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon'+plChar+'.png" style="width: 50px; margin: auto;"></span></span></span></div>';
- }
- if (!plFirst) {
-  aiTurn();
- }
+  gameStarted = true;
+  plMoveDisable = false;
+  document.getElementById('start-select').style.display = 'none';
+  document.getElementById('header').style.opacity = '';
+  document.getElementById('main-section').style.opacity = '';
+  if (round === 0) {
+    document.getElementById("aiTalk").innerHTML = '"Have Fun"';
+    document.getElementById("emoji-img").src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/win3.png";
+  }
+  round++;
+  ! function() {
+    var randPl = Math.floor(Math.random() * chars.length);
+    if (plChar === "X") {
+      plChar = chars[randPl];
+    }
+  }();
+  randChar();
+  var pos = document.getElementsByClassName("pos");
+  for (var i = 0; i < 9; i++) {
+    pos[i].innerHTML = '<div><span class="pos-span"><span id="transpChars' + i + '"><span style="display: flex;"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon' + plChar + '.png" style="width: 50px; margin: auto;"></span></span></span></div>';
+  }
+  if (!plFirst) {
+    aiTurn();
+  }
 }
 // --- /\ /\ /\  Before Game Start /\ /\ /\ ---
 
-
+/*
 // --- \/ \/ \/  After Game Start \/ \/ \/ ---
 // </> Checks for Victory
 function checkVictory(who) {
