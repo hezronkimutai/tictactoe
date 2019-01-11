@@ -139,11 +139,11 @@ header {
   height: 100px;
 }
 
-/*#emoji img {
+#emoji img {
   height: 100%;
 }
 
-#emoji-text {
+/*#emoji-text {
   flex: 1;
   text-align: center;
   margin: 0 30px;
