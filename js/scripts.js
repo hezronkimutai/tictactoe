@@ -319,19 +319,20 @@ function checkVictory(who) {
   }
   return false;
 }
-/*
+
 // </> Restart Game
 function restart(x) {
- for (var i = 0; i < 9; i++) {
-  document.getElementById("pos"+i).innerHTML = '<a href="javascript:void('+i+');" onclick="playerMove('+i+');" class="pos"></a>';
- }
- gameMain = ["0", "0", "0",
-             "0", "0", "0",
-             "0", "0", "0"];
+  for (var i = 0; i < 9; i++) {
+    document.getElementById("pos" + i).innerHTML = '<a href="javascript:void(' + i + ');" onclick="playerMove(' + i + ');" class="pos"></a>';
+  }
+  gameMain = ["0", "0", "0",
+    "0", "0", "0",
+    "0", "0", "0"
+  ];
   startGame();
   disableRestart = false;
 }
-
+/*
 // </> Write a Move
 function writeOnGame(pos, char) {
  gameMain[pos] = char;
