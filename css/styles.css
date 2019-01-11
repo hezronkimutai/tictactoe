@@ -362,14 +362,14 @@ tr, th, td {
   flex-wrap: wrap;
 }
 
-/*#grid div {
+#grid div {
   width: 33.3%;
   height: 33.3%;
   padding: 2.5px;
   display: flex;
 }
 
-#grid div div, #grid div a {
+/*#grid div div, #grid div a {
   background-color: #134DBF;
   text-shadow: 1px 1px grey;
   font-size: 45px;
