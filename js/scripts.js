@@ -85,10 +85,23 @@ var aiTalksMove = [
   ]
 ];
 
-/*var aiTalksTie = [[["draw01"],"..."], [["draw02"],"..."], [["draw03"],"..."], [["draw04"],"..."]];
+var aiTalksTie = [
+  [
+    ["draw01"], "..."
+  ],
+  [
+    ["draw02"], "..."
+  ],
+  [
+    ["draw03"], "..."
+  ],
+  [
+    ["draw04"], "..."
+  ]
+];
 
 // </> Ai Talking
-function randomEmoji(chance, arr) {
+/*function randomEmoji(chance, arr) {
  var randTest = Math.random() < chance;
  if (randTest) {
   var rand = Math.floor(Math.random()*arr.length);
