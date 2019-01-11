@@ -439,18 +439,18 @@ function ai() {
       return inx;
     }
 
-    /*      function plSim(simGame) { // PL SIM
-           var simGameTest = simGame.slice();
-           for (var i = 0; i < 9; i++) {
-            if (isOpen(simGame, i)) {
-             simGameTest = simGame.slice();
-             simGameTest[i] = plChar;
-             if (didWin(simGameTest, plChar)) {
-              return -1;
-             }
-            }
-           }
-           var plScores = ['0','0','0','0','0','0','0','0','0'];
+    function plSim(simGame) { // PL SIM
+      var simGameTest = simGame.slice();
+      for (var i = 0; i < 9; i++) {
+        if (isOpen(simGame, i)) {
+          simGameTest = simGame.slice();
+          simGameTest[i] = plChar;
+          if (didWin(simGameTest, plChar)) {
+            return -1;
+          }
+        }
+      }
+      /*     var plScores = ['0','0','0','0','0','0','0','0','0'];
            for (var j = 0; j < 9; j++) {
             if (isOpen(simGame, j)) {
              simGameTest = simGame.slice();
