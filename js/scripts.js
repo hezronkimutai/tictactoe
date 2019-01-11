@@ -265,53 +265,61 @@ function startGame() {
 }
 // --- /\ /\ /\  Before Game Start /\ /\ /\ ---
 
-/*
+
 // --- \/ \/ \/  After Game Start \/ \/ \/ ---
 // </> Checks for Victory
 function checkVictory(who) {
-   var inx = [], i;
-   for (i = 0; i < 9; i++) {
+  var inx = [],
+    i;
+  for (i = 0; i < 9; i++) {
     if (gameMain[i] === who) {
-     inx.push(i);     }
-   }
-   for (var j = 0; j < 8; j++) {
+      inx.push(i);
+    }
+  }
+  for (var j = 0; j < 8; j++) {
     var win = winCond[j];
     if (inx.indexOf(win[0]) !== -1 &&
-        inx.indexOf(win[1]) !== -1 &&
-        inx.indexOf(win[2]) !== -1) {
-     randomEmoji(1, aiTalksWin);
-     for (let k = 0; k < 3; k++) {
-      setTimeout(function() {
-       document.getElementById("div"+win[k]).className = "win";
-      },350*(k+1));
-     }
+      inx.indexOf(win[1]) !== -1 &&
+      inx.indexOf(win[2]) !== -1) {
+      randomEmoji(1, aiTalksWin);
+      for (let k = 0; k < 3; k++) {
+        setTimeout(function() {
+          document.getElementById("div" + win[k]).className = "win";
+        }, 350 * (k + 1));
+      }
 
       gameStarted = false;
       aiScore++;
       document.getElementById("score-ai").innerHTML = aiScore;
-      setTimeout(function() {restart("tie");},2000);
+      setTimeout(function() {
+        restart("tie");
+      }, 2000);
       return true;
-     }
-   }
-   if (gameMain.indexOf("0") === -1) {
+    }
+  }
+  if (gameMain.indexOf("0") === -1) {
     gameStarted = false;
     randomEmoji(1, aiTalksTie);
     setTimeout(function() {
-     for (let k = 0; k < 9; k++) {
-       setTimeout(function() {
-        document.getElementById("div"+[k]).innerHTML = "";
-       },125*(k+1));
+      for (let k = 0; k < 9; k++) {
+        setTimeout(function() {
+          document.getElementById("div" + [k]).innerHTML = "";
+        }, 125 * (k + 1));
       }
-    },500);
+    }, 500);
 
-    setTimeout(function() {restart("tie");},2100);
+    setTimeout(function() {
+      restart("tie");
+    }, 2100);
     tieScore++;
     document.getElementById("score-tie").innerHTML = tieScore;
     return true;
-   } else if (who === aiChar && gameMain.indexOf(plChar) !== -1) {randomEmoji(0.3, aiTalksMove);}
- return false;
+  } else if (who === aiChar && gameMain.indexOf(plChar) !== -1) {
+    randomEmoji(0.3, aiTalksMove);
+  }
+  return false;
 }
-
+/*
 // </> Restart Game
 function restart(x) {
  for (var i = 0; i < 9; i++) {
