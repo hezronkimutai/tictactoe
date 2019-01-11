@@ -66,13 +66,13 @@ button:focus {
   transform: translate(-50%, -50%);
 }
 
-/*#start-select div div h3 {
- margin: auto;
- text-align: center;
- width: 100%;
+#start-select div div h3 {
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
-#start-select div div span {
+/*#start-select div div span {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
