@@ -34,9 +34,58 @@ var aiTalksWin = [
   ]
 ];
 
-/*var aiTalksMove = [[["move00"],"..."], [["move00"],"Hmmm..."], [["move05"],"When the Robots Take Over You Will Be My Pet"], [["move08"],"Resistance is Futile"],[["move08"], "Your Defeat Is Imminent"], [["move03"],"Nice Try (not)"], [["move03"],"Knock Knock. Who's there? 01000001 01001001"], [["move4"],"There are 255,168 Possible Board Combinations, Yet You Picked That One?"], [["win4"],"011001000 01100001 00100000 x3"], [["draw02"],"When Was The Last Time You Rebooted Your Device?"], [["draw04"],"I Feel Pixelated"], [["move01"],"A Wise Computer Once Told Me That The Meaning Of Life Is 42"], [["draw01"],"GET TO THE CHOPA! Whoops Wrong Movie"], [["win02"],"The Terminator Was My Friend"], [["move06"], "Can't Touch This!"], [["move07"], "Your Last Move Goes In The Brown Category"]];
+var aiTalksMove = [
+  [
+    ["move00"], "..."
+  ],
+  [
+    ["move00"], "Hmmm..."
+  ],
+  [
+    ["move05"], "When the Robots Take Over You Will Be My Pet"
+  ],
+  [
+    ["move08"], "Resistance is Futile"
+  ],
+  [
+    ["move08"], "Your Defeat Is Imminent"
+  ],
+  [
+    ["move03"], "Nice Try (not)"
+  ],
+  [
+    ["move03"], "Knock Knock. Who's there? 01000001 01001001"
+  ],
+  [
+    ["move4"], "There are 255,168 Possible Board Combinations, Yet You Picked That One?"
+  ],
+  [
+    ["win4"], "011001000 01100001 00100000 x3"
+  ],
+  [
+    ["draw02"], "When Was The Last Time You Rebooted Your Device?"
+  ],
+  [
+    ["draw04"], "I Feel Pixelated"
+  ],
+  [
+    ["move01"], "A Wise Computer Once Told Me That The Meaning Of Life Is 42"
+  ],
+  [
+    ["draw01"], "GET TO THE CHOPA! Whoops Wrong Movie"
+  ],
+  [
+    ["win02"], "The Terminator Was My Friend"
+  ],
+  [
+    ["move06"], "Can't Touch This!"
+  ],
+  [
+    ["move07"], "Your Last Move Goes In The Brown Category"
+  ]
+];
 
-var aiTalksTie = [[["draw01"],"..."], [["draw02"],"..."], [["draw03"],"..."], [["draw04"],"..."]];
+/*var aiTalksTie = [[["draw01"],"..."], [["draw02"],"..."], [["draw03"],"..."], [["draw04"],"..."]];
 
 // </> Ai Talking
 function randomEmoji(chance, arr) {
