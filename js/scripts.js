@@ -451,39 +451,39 @@ function ai() {
         }
       }
       var plScores = ['0', '0', '0', '0', '0', '0', '0', '0', '0'];
-      /*       for (var j = 0; j < 9; j++) {
-              if (isOpen(simGame, j)) {
-               simGameTest = simGame.slice();
-               simGameTest[j] = plChar;
-               plScores[j] = aiSim(simGameTest);
-              }
-             }
-             return findScore(plScores, -1);
-            }
-
-            function aiSim(simGame) { // AI SIM
-             var simGameTest = simGame.slice();
-             for (var i = 0; i < 9; i++) {
-              if (isOpen(simGame, i)) {
-               simGameTest = simGame.slice();
-               simGameTest[i] = aiChar;
-               if (didWin(simGameTest, aiChar)) {
-                return 1;
+      for (var j = 0; j < 9; j++) {
+        if (isOpen(simGame, j)) {
+          simGameTest = simGame.slice();
+          simGameTest[j] = plChar;
+          plScores[j] = aiSim(simGameTest);
+        }
+      }
+      return findScore(plScores, -1);
+    }
+    /*
+                function aiSim(simGame) { // AI SIM
+                 var simGameTest = simGame.slice();
+                 for (var i = 0; i < 9; i++) {
+                  if (isOpen(simGame, i)) {
+                   simGameTest = simGame.slice();
+                   simGameTest[i] = aiChar;
+                   if (didWin(simGameTest, aiChar)) {
+                    return 1;
+                   }
+                  }
+                 }
+                 var aiScores = ['0','0','0','0','0','0','0','0','0'];
+                 for (var j = 0; j < 9; j++) {
+                  if (isOpen(simGame, j)) {
+                   simGameTest = simGame.slice();
+                   simGameTest[j] = aiChar;
+                   aiScores[j] = plSim(simGameTest);
+                  }
+                 }
+                 return findScore(aiScores, 1);
+                } // aiSim()
+               return findBestMove();
                }
-              }
-             }
-             var aiScores = ['0','0','0','0','0','0','0','0','0'];
-             for (var j = 0; j < 9; j++) {
-              if (isOpen(simGame, j)) {
-               simGameTest = simGame.slice();
-               simGameTest[j] = aiChar;
-               aiScores[j] = plSim(simGameTest);
-              }
-             }
-             return findScore(aiScores, 1);
-            } // aiSim()
-           return findBestMove();
-           }
-          } // ai() end
+              } // ai() end
 
-          charsBtnGen();
+              charsBtnGen();
