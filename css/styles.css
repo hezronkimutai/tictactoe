@@ -424,11 +424,11 @@ tr, th, td {
   transition: background-color 300ms;
 }
 
-/*footer p {
+footer p {
   text-align: center;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
