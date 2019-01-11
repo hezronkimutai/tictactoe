@@ -141,19 +141,19 @@ function charsBtnGen() {
   }
 }
 
-/*function openMenu(open) {
- if (open) {
-  document.getElementById('menu-nav').style.display = 'flex';
-  document.getElementById('header').style.opacity = '0.6';
-  document.getElementById('main-section').style.opacity = '0.6';
- } else {
-  document.getElementById('menu-nav').style.display = 'none';
-  document.getElementById('header').style.opacity = '';
-  document.getElementById('main-section').style.opacity = '';
- }
+function openMenu(open) {
+  if (open) {
+    document.getElementById('menu-nav').style.display = 'flex';
+    document.getElementById('header').style.opacity = '0.6';
+    document.getElementById('main-section').style.opacity = '0.6';
+  } else {
+    document.getElementById('menu-nav').style.display = 'none';
+    document.getElementById('header').style.opacity = '';
+    document.getElementById('main-section').style.opacity = '';
+  }
 }
 
-var aiChar = 'O';
+/*var aiChar = 'O';
 var plChar = 'X';
 var aiScore = 0;
 var tieScore = 0;
