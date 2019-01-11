@@ -366,108 +366,120 @@ function playerMove(pos) {
   }
 }
 // --- /\ /\ /\  After Game Start /\ /\ /\ ---
-/*
+
 // --- \/ \/ \/ AI \/ \/  \/ ---
 // </> MinMax algo
 function ai() {
- if (gameStarted) {
+  if (gameStarted) {
 
-  function isOpen(gameState,pos) {
-   return gameState[pos] === "0";
-  }
+    function isOpen(gameState, pos) {
+      return gameState[pos] === "0";
+    }
 
-  function didWin(gameState, val) {
-   var inx = [], i;
-   for (i = 0; i < 9; i++) {
-    if (gameState[i] === val) {
-     inx.push(i);     }    }
-   for (var i = 0; i < 8; i++) {
-     if (inx.indexOf(winCond[i][0]) !== -1 &&
-         inx.indexOf(winCond[i][1]) !== -1 &&
-         inx.indexOf(winCond[i][2]) !== -1) {
-      return true;    }   }    return false;  }
+    function didWin(gameState, val) {
+      var inx = [],
+        i;
+      for (i = 0; i < 9; i++) {
+        if (gameState[i] === val) {
+          inx.push(i);
+        }
+      }
+      for (var i = 0; i < 8; i++) {
+        if (inx.indexOf(winCond[i][0]) !== -1 &&
+          inx.indexOf(winCond[i][1]) !== -1 &&
+          inx.indexOf(winCond[i][2]) !== -1) {
+          return true;
+        }
+      }
+      return false;
+    }
 
-  function findScore(scores, x) {
-   if (scores.indexOf(x) !== -1) {return x;}
-   else if (scores.indexOf(0) !== -1) {return 0;}
-   else if (scores.indexOf(x * -1) !== -1) {return x * -1;}
-   else {return 0;}
-  }
+    function findScore(scores, x) {
+      if (scores.indexOf(x) !== -1) {
+        return x;
+      } else if (scores.indexOf(0) !== -1) {
+        return 0;
+      } else if (scores.indexOf(x * -1) !== -1) {
+        return x * -1;
+      } else {
+        return 0;
+      }
+    }
 
-  var scoresMain = ['0','0','0','0','0','0','0','0','0'];
-  function findBestMove() { // MAIN FUNCTION
-   for (var i = 0; i < 9; i++) {
-    if (isOpen(gameMain, i)) {
-     var simGame = gameMain.slice();
-     simGame[i] = aiChar;
-     if (didWin(simGame, aiChar)) {
-      scoresMain[i] = 1;
-     } else {
-      scoresMain[i] = plSim(simGame);
+    /*  var scoresMain = ['0','0','0','0','0','0','0','0','0'];
+      function findBestMove() { // MAIN FUNCTION
+       for (var i = 0; i < 9; i++) {
+        if (isOpen(gameMain, i)) {
+         var simGame = gameMain.slice();
+         simGame[i] = aiChar;
+         if (didWin(simGame, aiChar)) {
+          scoresMain[i] = 1;
+         } else {
+          scoresMain[i] = plSim(simGame);
+         }
+        }
+       }
+       var bigest = -99;
+       for (var j = 0; j < 9; j++) {
+        if (scoresMain[j] !== '0' && scoresMain[j] > bigest) {
+         bigest = scoresMain[j];
+        }
+       }
+       var inx = [], i;
+       for (i = 0; i < 9; i++) {
+        if (scoresMain[i] === bigest) {
+         inx.push(i);     }    }
+       console.log(gameMain.slice(0,3), scoresMain.slice(0,3));
+       console.log(gameMain.slice(3,6), scoresMain.slice(3,6));
+       console.log(gameMain.slice(6,9), scoresMain.slice(6,9));
+       return inx;
+      }
+
+      function plSim(simGame) { // PL SIM
+       var simGameTest = simGame.slice();
+       for (var i = 0; i < 9; i++) {
+        if (isOpen(simGame, i)) {
+         simGameTest = simGame.slice();
+         simGameTest[i] = plChar;
+         if (didWin(simGameTest, plChar)) {
+          return -1;
+         }
+        }
+       }
+       var plScores = ['0','0','0','0','0','0','0','0','0'];
+       for (var j = 0; j < 9; j++) {
+        if (isOpen(simGame, j)) {
+         simGameTest = simGame.slice();
+         simGameTest[j] = plChar;
+         plScores[j] = aiSim(simGameTest);
+        }
+       }
+       return findScore(plScores, -1);
+      }
+
+      function aiSim(simGame) { // AI SIM
+       var simGameTest = simGame.slice();
+       for (var i = 0; i < 9; i++) {
+        if (isOpen(simGame, i)) {
+         simGameTest = simGame.slice();
+         simGameTest[i] = aiChar;
+         if (didWin(simGameTest, aiChar)) {
+          return 1;
+         }
+        }
+       }
+       var aiScores = ['0','0','0','0','0','0','0','0','0'];
+       for (var j = 0; j < 9; j++) {
+        if (isOpen(simGame, j)) {
+         simGameTest = simGame.slice();
+         simGameTest[j] = aiChar;
+         aiScores[j] = plSim(simGameTest);
+        }
+       }
+       return findScore(aiScores, 1);
+      } // aiSim()
+     return findBestMove();
      }
-    }
-   }
-   var bigest = -99;
-   for (var j = 0; j < 9; j++) {
-    if (scoresMain[j] !== '0' && scoresMain[j] > bigest) {
-     bigest = scoresMain[j];
-    }
-   }
-   var inx = [], i;
-   for (i = 0; i < 9; i++) {
-    if (scoresMain[i] === bigest) {
-     inx.push(i);     }    }
-   console.log(gameMain.slice(0,3), scoresMain.slice(0,3));
-   console.log(gameMain.slice(3,6), scoresMain.slice(3,6));
-   console.log(gameMain.slice(6,9), scoresMain.slice(6,9));
-   return inx;
-  }
+    } // ai() end
 
-  function plSim(simGame) { // PL SIM
-   var simGameTest = simGame.slice();
-   for (var i = 0; i < 9; i++) {
-    if (isOpen(simGame, i)) {
-     simGameTest = simGame.slice();
-     simGameTest[i] = plChar;
-     if (didWin(simGameTest, plChar)) {
-      return -1;
-     }
-    }
-   }
-   var plScores = ['0','0','0','0','0','0','0','0','0'];
-   for (var j = 0; j < 9; j++) {
-    if (isOpen(simGame, j)) {
-     simGameTest = simGame.slice();
-     simGameTest[j] = plChar;
-     plScores[j] = aiSim(simGameTest);
-    }
-   }
-   return findScore(plScores, -1);
-  }
-
-  function aiSim(simGame) { // AI SIM
-   var simGameTest = simGame.slice();
-   for (var i = 0; i < 9; i++) {
-    if (isOpen(simGame, i)) {
-     simGameTest = simGame.slice();
-     simGameTest[i] = aiChar;
-     if (didWin(simGameTest, aiChar)) {
-      return 1;
-     }
-    }
-   }
-   var aiScores = ['0','0','0','0','0','0','0','0','0'];
-   for (var j = 0; j < 9; j++) {
-    if (isOpen(simGame, j)) {
-     simGameTest = simGame.slice();
-     simGameTest[j] = aiChar;
-     aiScores[j] = plSim(simGameTest);
-    }
-   }
-   return findScore(aiScores, 1);
-  } // aiSim()
- return findBestMove();
- }
-} // ai() end
-
-charsBtnGen();
+    charsBtnGen();
