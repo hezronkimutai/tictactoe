@@ -188,13 +188,13 @@ nav div div {
   transform: translate(-50%, -50%);
 }
 
-/*nav div div h3 {
+nav div div h3 {
   margin: auto;
   text-align: center;
   width: 100%;
 }
 
-nav div div span {
+/*nav div div span {
   width: 270px;
   display: flex;
   flex-wrap: wrap;
