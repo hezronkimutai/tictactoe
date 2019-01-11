@@ -341,13 +341,13 @@ tr, th, td {
   }
 }
 
-/*#outer-grid {
+#outer-grid {
   height: 300px;
   width: 300px;
   margin: 8px auto;
 }
 
-@media screen and (min-width: 380px) {
+/*@media screen and (min-width: 380px) {
   #outer-grid {
     width: 360px;
     height: 360px;
