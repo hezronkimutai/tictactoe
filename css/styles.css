@@ -233,7 +233,7 @@ nav div div button.active {
   transition: background-color 500ms;
 }
 
-/*nav div div button.charBtn {
+nav div div button.charBtn {
   min-width: 40px;
   height: 40px;
   width: 40px;
@@ -241,7 +241,7 @@ nav div div button.active {
   padding: 6px;
 }
 
-#main-section {
+/*#main-section {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
