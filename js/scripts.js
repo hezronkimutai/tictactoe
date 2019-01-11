@@ -153,12 +153,12 @@ function openMenu(open) {
   }
 }
 
-/*var aiChar = 'O';
+var aiChar = 'O';
 var plChar = 'X';
 var aiScore = 0;
 var tieScore = 0;
 
-var gameStarted = false;
+/*var gameStarted = false;
 // --- \/ \/ \/ Before Game Start \/ \/ \/ ---
 
 // </> Player 1st or 2nd
