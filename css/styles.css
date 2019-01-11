@@ -3,6 +3,13 @@
   font-family: 'Cabin', sans-serif;
 }
 
+body {
+  margin: 20px auto;
+  padding: 5px;
+  max-width: 510px;
+  background-color: #4ECCB0;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -34,12 +41,6 @@ a {
 
 button:focus {outline:0;}
 
-body {
- margin: 20px auto;
- padding: 5px;
- max-width: 510px;
- background-color: #4ECCB0;
-}
 
 #start-select {
  position: absolute;
