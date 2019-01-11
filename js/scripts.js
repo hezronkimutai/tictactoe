@@ -162,25 +162,26 @@ var gameStarted = false;
 // --- \/ \/ \/ Before Game Start \/ \/ \/ ---
 
 // </> Player 1st or 2nd
-/*plFirst = true;
+plFirst = true;
+
 function pickTurn(first) {
- if (first) {
-  document.getElementById("1st").className = "active";
-  document.getElementById("2nd").className = "";
-  document.getElementById("1st-next").className = "active";
-  document.getElementById("2nd-next").className = "";
- }
- if (!first) {
-  document.getElementById("2nd").className = "active";
-  document.getElementById("1st").className = "";
-  document.getElementById("2nd-next").className = "active";
-  document.getElementById("1st-next").className = "";
- }
- plFirst = first;
+  if (first) {
+    document.getElementById("1st").className = "active";
+    document.getElementById("2nd").className = "";
+    document.getElementById("1st-next").className = "active";
+    document.getElementById("2nd-next").className = "";
+  }
+  if (!first) {
+    document.getElementById("2nd").className = "active";
+    document.getElementById("1st").className = "";
+    document.getElementById("2nd-next").className = "active";
+    document.getElementById("1st-next").className = "";
+  }
+  plFirst = first;
 }
 
 // </> Character Chooser
-function chrChoose(x) {
+/*function chrChoose(x) {
  for (var i = 0; i < chars.length; i++) {
   document.getElementById("char"+i).className = "charBtn";
  }
