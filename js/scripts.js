@@ -480,10 +480,10 @@ function ai() {
           aiScores[j] = plSim(simGameTest);
         }
       }
-      /*                 return findScore(aiScores, 1);
-                      } // aiSim()
-                     return findBestMove();
-                     }
-                    } // ai() end
+      return findScore(aiScores, 1);
+    } // aiSim()
+    return findBestMove();
+  }
+} // ai() end
 
-                    charsBtnGen();
+charsBtnGen();
