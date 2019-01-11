@@ -194,14 +194,14 @@ nav div div h3 {
   width: 100%;
 }
 
-/*nav div div span {
+nav div div span {
   width: 270px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-nav div div button {
+/*nav div div button {
   background-color: #4ECCB0;
   border-radius: 8px;
   margin: 3px;
