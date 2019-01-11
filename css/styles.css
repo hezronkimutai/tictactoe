@@ -166,7 +166,7 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-/*nav div {
+nav div {
   position: fixed;
   display: flex;
   left: 50%;
@@ -179,7 +179,7 @@ nav {
   box-shadow: 3px 3px 6px #0B3A97;
 }
 
-nav div div {
+/*nav div div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
