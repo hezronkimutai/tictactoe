@@ -30,10 +30,11 @@ a {
   color: inherit;
 }
 
-/*button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
 
-
-#start-select {
+/*#start-select {
  position: absolute;
  width: 100vw;
  height: 100vh;
