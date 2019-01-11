@@ -413,15 +413,15 @@ tr, th, td {
   opacity: 0.4;
   -webkit-transition: opacity 550ms;
   /* Safari */
-  /*transition: opacity 550ms;
+  transition: opacity 550ms;
 }
 
-#grid div div:hover {
+/*#grid div div:hover {
   background-color: #0B3A96;
   box-shadow: 4px 4px 5px #008B81;
   -webkit-transition: background-color 300ms;
   /* Safari */
-  /*transition: background-color 300ms;
+/*transition: background-color 300ms;
 }
 
 footer p {
