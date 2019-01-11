@@ -406,8 +406,8 @@ function ai() {
       }
     }
 
-    /*  var scoresMain = ['0','0','0','0','0','0','0','0','0'];
-      function findBestMove() { // MAIN FUNCTION
+    var scoresMain = ['0', '0', '0', '0', '0', '0', '0', '0', '0'];
+    /*    function findBestMove() { // MAIN FUNCTION
        for (var i = 0; i < 9; i++) {
         if (isOpen(gameMain, i)) {
          var simGame = gameMain.slice();
@@ -435,7 +435,7 @@ function ai() {
        return inx;
       }
 
-      function plSim(simGame) { // PL SIM
+/*      function plSim(simGame) { // PL SIM
        var simGameTest = simGame.slice();
        for (var i = 0; i < 9; i++) {
         if (isOpen(simGame, i)) {
