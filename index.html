@@ -8,62 +8,38 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div id="outside">
-      <div id="spacer">Tic Tac Toe
-        <div id="message"></div>
-      </div>
-      <div id="game">
-        <div class="row">
-          <div class="col-4">
-            <div id="00" class="board bottom right" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="01" class="board left bottom right" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="02" class="board left bottom" onClick="click"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div id="10" class="board top right bottom" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="11" class="board top right bottom left" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="12" class="board top bottom left" onClick="click"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div id="20" class="board top right" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="21" class="board top right left" onClick="click"></div>
-          </div>
-          <div class="col-4">
-            <div id="22" class="board top left" onClick="click"></div>
-          </div>
-        </div>
-      </div>
-      <div id="choose">
-        <i id="x" class="fa fa-3x fa-times" onClick="click" aria-hidden="true"></i>
-        <i id="o" class="fa fa-3x fa-circle-o" onClick="click" aria-hidden="true"></i>
-      </div>
-      <div id="again">
-        <button class="again" onClick="click">Reset</button>
+
+  <div class="my_social">
+      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+        </a>
+      <a href="https://stewilondanga.github.io/" class="social">
+          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+        </a>
+      <a href="https://twitter.com/stew_ilondanga" class="social">
+          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+        </a>
+    </div>
+
+  <section id="contact">
+    <div class="overlay">
+      <div class="containers">
+
+        <h1>
+<script>
+with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
+h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
+while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
+</script>
+</h1>
+
       </div>
     </div>
-  </div>
-  <div>
-    <h1>Click on the reset button to start the game thereafter clicking on a square is equivalent of playing</h1>
-    <h4>Created by Stewart ilondanga</h4>
-  </div>
+  </section>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="js/scripts.js" charset="utf-8"></script>
 
 </html>
