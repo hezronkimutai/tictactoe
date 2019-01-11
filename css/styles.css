@@ -276,14 +276,14 @@ nav div div button.charBtn {
   margin: auto;
 }
 
-/*#score table, #score div {
+#score table, #score div {
   font-size: 20px;
   text-align: center;
   margin: auto;
   display: flex;
 }
 
-tr, th, td {
+/*tr, th, td {
   padding: 1px;
 }
 
