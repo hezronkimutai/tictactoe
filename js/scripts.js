@@ -332,14 +332,14 @@ function restart(x) {
   startGame();
   disableRestart = false;
 }
-/*
+
 // </> Write a Move
 function writeOnGame(pos, char) {
- gameMain[pos] = char;
- document.getElementById("pos"+pos)
-  .innerHTML = "<div  class='taken' id='div"+pos+"'><span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon"+char+".png' style='width: 50px; margin: auto;'></span></div>";
+  gameMain[pos] = char;
+  document.getElementById("pos" + pos)
+    .innerHTML = "<div  class='taken' id='div" + pos + "'><span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon" + char + ".png' style='width: 50px; margin: auto;'></span></div>";
 }
-
+/*
 // </> Ai Triger and Equal Value Ai Move Randomizer
 function aiTurn() {
  var posArr = ai();
