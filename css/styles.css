@@ -78,16 +78,17 @@ button:focus {
   justify-content: center;
 }
 
-/*#start-select div div button {
- background-color: #4ECCB0;
- border-radius: 8px;
- margin: 3px;
- padding: 15px;
- height: 50px;
- min-width: 55px;
- border: none;
- -webkit-transition: background-color 500ms; /* Safari */
-/*transition: background-color 500ms;
+#start-select div div button {
+  background-color: #4ECCB0;
+  border-radius: 8px;
+  margin: 3px;
+  padding: 15px;
+  height: 50px;
+  min-width: 55px;
+  border: none;
+  -webkit-transition: background-color 500ms;
+  /* Safari */
+  /*transition: background-color 500ms;
 }
 
 #start-select div div button:hover {
