@@ -272,11 +272,11 @@ nav div div button.charBtn {
   border: solid #009271;
 }
 
-/*#score {
+#score {
   margin: auto;
 }
 
-#score table, #score div {
+/*#score table, #score div {
   font-size: 20px;
   text-align: center;
   margin: auto;
