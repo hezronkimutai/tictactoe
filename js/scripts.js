@@ -339,15 +339,15 @@ function writeOnGame(pos, char) {
   document.getElementById("pos" + pos)
     .innerHTML = "<div  class='taken' id='div" + pos + "'><span style='display: flex;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon" + char + ".png' style='width: 50px; margin: auto;'></span></div>";
 }
-/*
+
 // </> Ai Triger and Equal Value Ai Move Randomizer
 function aiTurn() {
- var posArr = ai();
- var ran = Math.floor(Math.random() * posArr.length);
- writeOnGame(posArr[ran], aiChar);
- checkVictory(aiChar);
+  var posArr = ai();
+  var ran = Math.floor(Math.random() * posArr.length);
+  writeOnGame(posArr[ran], aiChar);
+  checkVictory(aiChar);
 }
-
+/*
 // </> Player Click
 var plMoveDisable = false
 function playerMove(pos) {
