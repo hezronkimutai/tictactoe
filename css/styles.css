@@ -405,11 +405,11 @@ tr, th, td {
   transition: opacity 250ms;
 }
 
-/*.pos-span span {
+.pos-span span {
   margin: auto;
 }
 
-.pos-span:hover {
+/*.pos-span:hover {
   opacity: 0.4;
   -webkit-transition: opacity 550ms;
   /* Safari */
