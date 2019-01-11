@@ -129,18 +129,19 @@ var gameMain = ["0", "0", "0",
   "0", "0", "0"
 ];
 
-/*var chars = ["01","02","03","04","05","06","07","08","09","10","11","12","13"];
+var chars = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"];
+
 function charsBtnGen() {
- for (var i = 0; i < chars.length; i++) {
+  for (var i = 0; i < chars.length; i++) {
 
-  document.getElementById("charSymbols").innerHTML += '<button id="char'+i+'" class="charBtn" onclick="chrChoose('+i+');"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon'+chars[i]+'.png" style="width: 25px"></button>';
+    document.getElementById("charSymbols").innerHTML += '<button id="char' + i + '" class="charBtn" onclick="chrChoose(' + i + ');"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon' + chars[i] + '.png" style="width: 25px"></button>';
 
-  document.getElementById("menu-chars").innerHTML += '<button id="char-chng'+i+'" class="charBtn" onclick="chrChange('+i+');"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon'+chars[i]+'.png" style="width: 25px"></button>';
+    document.getElementById("menu-chars").innerHTML += '<button id="char-chng' + i + '" class="charBtn" onclick="chrChange(' + i + ');"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/icon' + chars[i] + '.png" style="width: 25px"></button>';
 
- }
+  }
 }
 
-function openMenu(open) {
+/*function openMenu(open) {
  if (open) {
   document.getElementById('menu-nav').style.display = 'flex';
   document.getElementById('header').style.opacity = '0.6';
