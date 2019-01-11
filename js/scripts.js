@@ -101,19 +101,19 @@ var aiTalksTie = [
 ];
 
 // </> Ai Talking
-/*function randomEmoji(chance, arr) {
- var randTest = Math.random() < chance;
- if (randTest) {
-  var rand = Math.floor(Math.random()*arr.length);
-  console.log(rand);
-  document.getElementById("emoji-img")
-   .src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/"+arr[rand][0][0]+".png";
-  document.getElementById("aiTalk")
-   .innerHTML = '"'+arr[rand][1]+'"';
- }
+function randomEmoji(chance, arr) {
+  var randTest = Math.random() < chance;
+  if (randTest) {
+    var rand = Math.floor(Math.random() * arr.length);
+    console.log(rand);
+    document.getElementById("emoji-img")
+      .src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/" + arr[rand][0][0] + ".png";
+    document.getElementById("aiTalk")
+      .innerHTML = '"' + arr[rand][1] + '"';
+  }
 }
 
-var winCond = [[0,1,2],[3,4,5],[6,7,8],
+/*var winCond = [[0,1,2],[3,4,5],[6,7,8],
                [0,3,6],[1,4,7],[2,5,8],
                [0,4,8],[2,4,6]];
 
