@@ -347,23 +347,26 @@ function aiTurn() {
   writeOnGame(posArr[ran], aiChar);
   checkVictory(aiChar);
 }
-/*
+
 // </> Player Click
 var plMoveDisable = false
+
 function playerMove(pos) {
- if (gameStarted && !plMoveDisable) {
-  plMoveDisable = true;
-  writeOnGame(pos, plChar);
-  var win = checkVictory(plChar);
-  if (win) {return;}
-  setTimeout(function() {
-   aiTurn();
-   plMoveDisable = false;
-  },450);
- }
+  if (gameStarted && !plMoveDisable) {
+    plMoveDisable = true;
+    writeOnGame(pos, plChar);
+    var win = checkVictory(plChar);
+    if (win) {
+      return;
+    }
+    setTimeout(function() {
+      aiTurn();
+      plMoveDisable = false;
+    }, 450);
+  }
 }
 // --- /\ /\ /\  After Game Start /\ /\ /\ ---
-
+/*
 // --- \/ \/ \/ AI \/ \/  \/ ---
 // </> MinMax algo
 function ai() {
