@@ -72,13 +72,13 @@ button:focus {
   width: 100%;
 }
 
-/*#start-select div div span {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
+#start-select div div span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#start-select div div button {
+/*#start-select div div button {
  background-color: #4ECCB0;
  border-radius: 8px;
  margin: 3px;
