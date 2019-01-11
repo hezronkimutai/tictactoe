@@ -407,19 +407,20 @@ function ai() {
     }
 
     var scoresMain = ['0', '0', '0', '0', '0', '0', '0', '0', '0'];
-    /*    function findBestMove() { // MAIN FUNCTION
-       for (var i = 0; i < 9; i++) {
+
+    function findBestMove() { // MAIN FUNCTION
+      for (var i = 0; i < 9; i++) {
         if (isOpen(gameMain, i)) {
-         var simGame = gameMain.slice();
-         simGame[i] = aiChar;
-         if (didWin(simGame, aiChar)) {
-          scoresMain[i] = 1;
-         } else {
-          scoresMain[i] = plSim(simGame);
-         }
+          var simGame = gameMain.slice();
+          simGame[i] = aiChar;
+          if (didWin(simGame, aiChar)) {
+            scoresMain[i] = 1;
+          } else {
+            scoresMain[i] = plSim(simGame);
+          }
         }
-       }
-       var bigest = -99;
+      }
+      /*   var bigest = -99;
        for (var j = 0; j < 9; j++) {
         if (scoresMain[j] !== '0' && scoresMain[j] > bigest) {
          bigest = scoresMain[j];
